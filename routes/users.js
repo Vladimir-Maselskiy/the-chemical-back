@@ -4,7 +4,7 @@ const ctrlWrapper = require('../utils/ctrlWrapper');
 
 const router = express.Router();
 
-router.get('/', ctrlWrapper(ctrl.getUser));
-router.post('/', ctrlWrapper(ctrl.addUser));
+router.post('/login', ctrlWrapper(ctrl.getUser));
+router.post('/register', ctrlWrapper(ctrl.addUser));
 
 module.exports = router;

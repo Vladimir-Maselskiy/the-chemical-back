@@ -1,10 +1,8 @@
 const express = require('express');
-const ctrl = require('../controllers/orders');
+const ctrl = require('../controllers/deals');
 const ctrlWrapper = require('../utils/ctrlWrapper');
-
 const router = express.Router();
 
-router.get('/', ctrlWrapper(ctrl.getAllOrders));
-router.post('/', ctrlWrapper(ctrl.addOrder));
+router.get('/', ctrlWrapper(ctrl.getAllDeals));
 
 module.exports = router;

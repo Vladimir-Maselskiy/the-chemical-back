@@ -1,11 +1,11 @@
-const { Product } = require('../../models/product');
+const { User } = require('../../models/user');
 
 const addProduct = async (req, res, next) => {
   try {
-    const product = await Product.create({
+    const user = await User.create({
       ...req.body,
     });
-    res.status(201).json(product);
+    res.status(201).json(user);
   } catch (error) {
     next(error);
   }

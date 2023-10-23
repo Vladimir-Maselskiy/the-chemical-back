@@ -8,7 +8,7 @@ const getUser = async (req, res, next) => {
       return res.status(404).json({ error: 'User not found' });
     }
 
-    res.staus(200).json(userFromDB);
+    res.status(200).json(userFromDB);
   } catch (error) {
     next(error);
   }

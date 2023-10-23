@@ -4,6 +4,6 @@ const healthz = require('../controllers/healthz/healthz');
 
 const router = express.Router();
 
-router.get('/', healthz);
+router.post('/', healthz);
 
 module.exports = router;

@@ -2,22 +2,15 @@ const { Schema, model } = require('mongoose');
 
 const userSchema = new Schema(
   {
-    productId: {
-      type: String,
-      required: [true, 'ProductId is required'],
-    },
-    name: {
-      type: String,
-      required: [true, 'Name is required'],
-    },
     email: {
       type: String,
-      required: [true, 'Image is required'],
+      required: [true, 'Email is required'],
     },
     password: {
       type: String,
-      required: [true, 'Price is required'],
+      required: [true, 'Password is required'],
     },
+
     timestamps: {
       type: Number,
       default: Number(new Date()),
